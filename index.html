@@ -1,6 +1,3 @@
-<?php
-include('db.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +15,14 @@ include('db.php');
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 <link rel="stylesheet" href="css/jquery-ui.css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 <!--fonts-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 <!--//fonts-->
 </head>
 <body>
@@ -183,14 +182,14 @@ include('db.php');
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
+							<h4 class="cbp-ig-title">BEDROOMS</h4>
 							<span class="cbp-ig-category">SUN RISE</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">SEA VIEW BALCONY</h4>
+							<h4 class="cbp-ig-title">BALCONY</h4>
 							<span class="cbp-ig-category">SUN RISE</span>
 						</div>
 					</li>
@@ -217,7 +216,7 @@ include('db.php');
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
-                            <h3 class="title-w3-agileits title-black-wthree">About Our SUN RISE</h3> 
+                            <h3 class="title-w3-agileits title-black-wthree">About Us - Sun Rise</h3> 
 						   <p class="about-para-w3ls">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed tempus vestibulum lacus blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna</p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
@@ -362,6 +361,7 @@ include('db.php');
 -->
 <!-- //team -->
 <!-- Gallery -->
+<br> <br>
 <section class="portfolio-w3ls" id="gallery">
 		 <h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
 				<div class="col-md-3 gallery-grid gallery1">
@@ -510,7 +510,7 @@ include('db.php');
 							</div>
 							<div class="price-selet">
 								<h3><span>$</span>220</h3>
-								<a href="admin/reservation.php" >Book Now</a>
+								<a href="admin/reservation.php">Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -710,21 +710,6 @@ include('db.php');
                     
                     <input type="submit" name="sub" value="Send Now" class="btn btn-primary">	
 				</form>
-				<?php
-				if(isset($_POST['sub']))
-				{
-					$name =$_POST['name'];
-					$phone = $_POST['phone'];
-					$email = $_POST['email'];
-					$approval = "Not Allowed";
-					$sql = "INSERT INTO `contact`(`fullname`, `phoneno`, `email`,`cdate`,`approval`) VALUES ('$name','$phone','$email',now(),'$approval')" ;
-					
-					
-					if(mysqli_query($con,$sql))
-					echo"OK";
-					
-				}
-				?>
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
@@ -748,7 +733,7 @@ include('db.php');
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2017 SUNRISE . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>
+		        <p>© 2024 SUNRISE . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
@@ -870,3 +855,5 @@ fit: true
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>
+
+
